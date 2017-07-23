@@ -32,12 +32,11 @@ defmodule Rox.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:rustler, "~> 0.10"},
+      {:rustler, github: "hansihe/rustler", sparse: "rustler_mix"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:benchfella, "~> 0.3", only: :dev},
       {:faker, "~> 0.7", only: :dev},
       {:flow, "~> 0.11", only: :dev},
-      {:gen_stage, "~> 0.11", only: :dev},
       {:dialyxir, "~> 0.5", only: :dev},
     ]
   end
